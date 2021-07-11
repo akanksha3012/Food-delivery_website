@@ -1,0 +1,224 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+#navbar{
+    display:flex;
+    align-items: center;
+}
+/* logo and image */
+#logo{
+    margin: 10px 34px;  
+}
+#logo img{
+    height: 56px;
+    margin: 3px 6px;
+    clip-path: circle();   
+}
+/* navigation bar: List styling */
+#navbar{
+    position: relative;
+    box-shadow: 5px 10px 30px rgba(14, 13, 13, 0.15); 
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+   content:"";
+   background-color: black;
+   position: absolute;
+   height: 90%;
+   width: 100%;
+   top:0px;
+   left: 0px;
+   z-index: -1;
+   opacity:0.3;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+}
+#navbar ul li a{
+    color: white; 
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+} 
+#navbar ul li a:hover{
+    color: black; 
+    background-color: white;
+    transition: all ease 0.2s;
+     box-shadow: 5px 10px 30px rgba(14, 13, 13, 0.15); 
+} 
+#navbar .right{
+    position: absolute;
+    right: 10px;
+    top:8px;
+    display:inline-block;  
+}
+#navbar .right .btn{
+    margin:18px 5px;
+}
+#navbar .right .btn:hover{
+    background-color: white;
+    color:brown;
+    font-weight: 600;
+}
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    background: url('spaghetti-1932466_1920.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 80%;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    z-index: -2;
+    opacity:0.84;  
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size:  1.5rem;
+    font-family: 'Great Vibes', cursive;
+}
+/* utility classes */
+#services{
+    margin: 18px;
+    display:flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin:0px 12px;
+    border-radius: 15px;
+    background-color: rgb(245, 224, 224);   
+}
+#services .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+.shadow img{
+    box-shadow: 5px 5px 30px rgba(71, 17, 17, 0.5); 
+}
+/* client section */
+#client-section{
+    height:344px;
+}
+#clients img{
+    height:140px;
+    box-shadow: 5px 5px 30px rgba(71, 17, 17, 0.5);
+}
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding:40px;
+}
+#client-section::before{
+    content:"";
+    position: absolute;
+    background: url('sunflower-2598970_1920.jpg');
+    width:100%;
+    height:54%;
+    z-index: -1;
+    opacity:0.56;  
+    background-position: center center;
+    
+}
+.h-primary{
+    font-size: 3.2rem;
+    padding: 15px;
+    text-align: center;
+
+}
+.h-secondary{
+    font-size: 1.1rem;
+    padding: 12px;
+
+}
+.h-secondary p .center{
+    text-align: justify;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px 17px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 2px 5px 15px rgba(107, 34, 34,0.5); 
+    transition: all ease 0.2s;   
+}
+.center{
+    text-align: center;
+}
+/* contact section */
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index: -1;
+    opacity:0.7;
+    background: url('contact-us-4193523_1920.jpg') no-repeat center center/cover;
+    margin-top: 0;
+}
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+#contact-box input, #contact-textarea{
+    width:100%;
+    padding: 0.2rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+#contact-box form{
+    width:25%;
+}
+#contact-box label{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.form-grp img{
+    height:5%;
+    width:5%;
+}
+footer{
+    background: rgb(27, 27, 27);
+    color:white;
+    padding: 5px 5px;
+    
+}
